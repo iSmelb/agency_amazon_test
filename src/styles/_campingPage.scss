@@ -1,0 +1,26 @@
+.camping_page {
+  .table_header {
+    display: flex;
+
+    div {
+      width: 25%;
+      border: 1px solid #fff;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    div.active {
+      background-color: #bf94ff;
+    }
+  }
+
+  .row {
+    display: flex;
+
+    div {
+      width: 25%;
+      border: 1px solid #fff;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.profile_page {
+  .table_header {
+    display: flex;
+
+    div {
+      width: 33.3%;
+      border: 1px solid #fff;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    div.active {
+      background-color: #bf94ff;
+    }
+  }
+
+  .link_row {
+    display: flex;
+
+    &:hover {
+      background: #1d1d1d
+    }
+
+    div {
+      width: 33.3%;
+      border: 1px solid #fff;
+      text-align: center;
+    }
+  }
+}

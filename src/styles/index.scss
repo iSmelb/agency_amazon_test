@@ -1,0 +1,123 @@
+@import './_reset.scss';
+@import './_homePage.scss';
+@import './profilePage';
+@import './campingPage';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  background: #a1a1a1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(82, 82, 82);
+}
+
+body {
+  background-color: #0e0e10;
+  color: #fff;
+  font-size: 18px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 375px;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.main {
+  flex-grow: 1;
+  width: 100%;
+  
+  &.container {
+    padding: 20px 15px;
+  }
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  button {
+    background-color: #a1a1a1;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.active {
+      background-color: #4e4e4e;
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.header {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #18181b;
+
+  .header_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: #000;
+        color: #bf94ff;
+      }
+    }
+
+    .dashboard {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #18181b;
+  color: #fff;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+      color: #bf94ff;
+    }
+  }
+}
